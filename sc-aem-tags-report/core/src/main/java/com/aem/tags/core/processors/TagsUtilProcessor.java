@@ -155,7 +155,7 @@ public class TagsUtilProcessor
     List<Resource>             refs = new ArrayList<Resource>();
     
     RangeIterator<Resource> tagRefs;
-    if(m_tB.getContentPath() != null || m_tB.getContentPath() == "")
+    if(m_tB.getContentPath() == null || m_tB.getContentPath() == "")
       tagRefs = m_tm.find(tag.getTagID());
     else tagRefs = m_tm.find(m_tB.getContentPath(), new String[] {tag.getTagID()});
     

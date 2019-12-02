@@ -35,7 +35,7 @@
                     <contentPath
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldDescription="Please select either pages(/content/*) or assets (/content/dam/*). If empty then it searches for both pages/assets"
+                        fieldDescription="Please select the path. If empty then it searches for all the references"
                         fieldLabel="Content Path"
                         name="./contentPath"
                         rootPath="/content/"/>
