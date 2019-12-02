@@ -1,0 +1,27 @@
+<span class="edit-start container" data-sly-test="${wcmmode.edit}">&nbsp;&nbsp;&nbsp;&#9473; Tags Util &nbsp;&#9473;</span>
+<template data-sly-template.tagsUtil="${ @ model }">
+
+
+   <section class="component-synopsys-util">
+
+
+      <form method="get" action="${currentPage.name}.sctags-util.html">
+         
+	     
+	     <p><input is="coral-textfield" placeholder="Tags Path" name="tagsPath" value="${model.tagsPath}"></p>
+         <p><input is="coral-textfield" placeholder="Include Child Tags?" name="excludeSubTags" value="${model.excludeSubTags}"></p>
+         <p><input is="coral-textfield" placeholder="Content Path" name="contentPath" value="${model.contentPath}"></p>
+         <p><input is="coral-textfield" placeholder="Tags Report Location" name="damPath" value="${model.damPath}"></p>
+		 <p><input is="coral-textfield" placeholder="Tags Report Name" name="reportName" value="${model.reportName}"></p>
+		 
+		<button is="coral-button" icon="checkCircle" iconsize="S">
+		   <span class="inner-text"><i class="fa" aria-hidden="true"></i>&nbsp;&nbsp;SUBMIT</span>
+		</button>	
+      </form>
+
+
+   </section>
+
+
+</template>
+<sly data-sly-use.model="com.aem.tags.core.models.TagsUtil" data-sly-call="${tagsUtil @ model=model}" />

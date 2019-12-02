@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tags Utility"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[tags-util-validation]"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tagPath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldDescription="You can select either /etc/tags OR /content/cq:tags based on the AEM version you are using"
+                        fieldLabel="Tags Path"
+                        id="test-id"
+                        name="./tagsPath"
+                        required="{Boolean}true"/>
+                    <excludeSubTags
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        fieldLabel="Exclude Sub-Tags?"
+                        name="./excludeSubTags"
+                        text="Exclude Sub-Tags?"
+                        value="true"/>
+                    <contentPath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldDescription="Please select either pages(/content/*) or assets (/content/dam/*). If empty then it searches for both pages/assets"
+                        fieldLabel="Content Path"
+                        name="./contentPath"
+                        rootPath="/content/"/>
+                    <damLocation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldDescription="The final tags report (excel) will be uploaded to this location"
+                        fieldLabel="DAM Location"
+                        name="./damPath"
+                        required="{Boolean}true"
+                        rootPath="/content/dam/"/>
+                    <reportName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="The report name you want to use. The same report would get uploaded to DAM"
+                        fieldLabel="Tag Report Name"
+                        name="./reportName"
+                        required="{Boolean}true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

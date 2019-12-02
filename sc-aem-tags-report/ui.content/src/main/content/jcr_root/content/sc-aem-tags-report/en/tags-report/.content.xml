@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-12-01T08:44:37.644-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/sc-aem-tags-report/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="tags-report"
+        sling:resourceType="sc-aem-tags-report/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sc-aem-tags-report/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sc-aem-tags-report/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sc-aem-tags-report/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sc-aem-tags-report/components/content/text"
+                text="&lt;p>This is a content page&lt;/p>"
+                textIsRich="true"/>
+            <tagsutil
+                jcr:created="{Date}2019-11-26T11:52:35.615-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-12-01T08:44:37.616-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sc-aem-tags-report/components/content/tagsUtil"
+                contentPath="/content/we-retail"
+                damPath="/content/dam/we-retail"
+                reportName="hat-report"
+                tagsPath="/etc/tags/we-retail"/>
+        </par>
+    </jcr:content>
+</jcr:root>
