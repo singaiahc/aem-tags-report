@@ -310,6 +310,7 @@ public class TagsUtilProcessor
     
     Calendar repTime  = valMap.get("cq:lastReplicated", Calendar.class);
     Calendar modTime  = valMap.get("cq:lastModified", Calendar.class);
+    if(modTime == null) return false;
     
     if(modTime.compareTo(repTime) > 0) return true;
     
