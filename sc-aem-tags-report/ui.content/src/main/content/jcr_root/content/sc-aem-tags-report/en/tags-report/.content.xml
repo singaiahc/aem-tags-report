@@ -31,11 +31,7 @@
                 jcr:lastModified="{Date}2019-12-01T08:44:37.616-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="sc-aem-tags-report/components/content/tagsUtil"
-                contentPath="/content/we-retail"
-                damPath="/content/dam/we-retail"
-                reportName="hat-report"
-                tagsPath="/etc/tags/we-retail"/>
+                sling:resourceType="sc-aem-tags-report/components/content/tagsUtil"/>
         </par>
     </jcr:content>
 </jcr:root>
