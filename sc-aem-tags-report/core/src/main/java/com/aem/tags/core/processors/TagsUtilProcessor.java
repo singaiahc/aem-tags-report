@@ -19,6 +19,7 @@ import javax.jcr.RepositoryException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.VerticalAlignment;
@@ -274,7 +275,7 @@ public class TagsUtilProcessor
   {
     CellStyle headStyles = workbook.createCellStyle();
     headStyles.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-    headStyles.setFillForegroundColor((short) 11);
+    headStyles.setFillForegroundColor((short) 22);
     headStyles.setVerticalAlignment(VerticalAlignment.CENTER);
     
     
