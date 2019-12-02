@@ -3,7 +3,6 @@
     jcr:primaryType="nt:unstructured"
     jcr:title="Tags Utility"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    extraClientlibs="[tags-util-validation]"
     fileName="_cq_dialog.xml"
     mode="edit">
     <content
